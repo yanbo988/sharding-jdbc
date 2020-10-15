@@ -1,10 +1,9 @@
 package com.cxytiandi.sharding.repository;
 
-import java.util.List;
-
+import com.cxytiandi.sharding.po.User;
 import org.apache.ibatis.annotations.Mapper;
 
-import com.cxytiandi.sharding.po.User;
+import java.util.List;
 
 
 @Mapper
@@ -15,6 +14,8 @@ public interface UserRepository {
 	List<User> list();
 	
 	User findById(Long id);
-	
-	User findByName(String name);
+
+	List<User> findByName(String name);
+
+	List<User> findByIdRange(Long id);
 }

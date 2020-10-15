@@ -1,6 +1,8 @@
+# 读写分离
 CREATE DATABASE `ds_0` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
-CREATE DATABASE `ds_1` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
+CREATE DATABASE `ds_0_0` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
 
+# 主从库分别执行
 CREATE TABLE `user`(
 	id bigint(64) not null,
 	city varchar(20) not null,

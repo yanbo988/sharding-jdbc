@@ -1,5 +1,6 @@
-CREATE DATABASE `ds_0` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
-CREATE DATABASE `ds_1` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
+# 创建两个库，注意数字前的分割符为"_"
+CREATE DATABASE `dss_0` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
+CREATE DATABASE `dss_1` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
 
 CREATE TABLE `user_0`(
 	id bigint(64) not null,

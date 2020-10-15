@@ -1,3 +1,4 @@
+# 不分库：分表
 CREATE DATABASE `ds_2` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
 
 CREATE TABLE `user_0`(

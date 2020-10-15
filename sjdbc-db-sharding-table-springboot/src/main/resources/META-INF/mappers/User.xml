@@ -10,9 +10,10 @@
     
     <insert id="addUser">
         INSERT INTO user (
-           city, name
+           id,city, name
         )
         VALUES (
+        #{id,jdbcType=INTEGER},
         #{city,jdbcType=VARCHAR},
         #{name,jdbcType=VARCHAR}
         )

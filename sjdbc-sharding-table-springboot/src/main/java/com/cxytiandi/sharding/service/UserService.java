@@ -1,8 +1,8 @@
 package com.cxytiandi.sharding.service;
 
-import java.util.List;
-
 import com.cxytiandi.sharding.po.User;
+
+import java.util.List;
 
 public interface UserService {
 
@@ -11,7 +11,9 @@ public interface UserService {
 	Long add(User user);
 	
 	User findById(Long id);
-	
-	User findByName(String name);
+
+	List<User> findByName(String name);
+
+	List<User> findByIdRange(Long id);
 	
 }
